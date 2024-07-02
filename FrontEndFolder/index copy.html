@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Database</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header class="Header">
+      <h1>USER OPERATIONS</h1>
+      <ul id="getReq">
+      </ul>
+      <button type="button" value="Get" onclick="apiGet()" class="btn1">Refresh</button>
+    </header>
+    <main class="container">
+      
+      <fieldset class="Fieldset">
+        <legend>database management</legend>
+      <form name="form1" class="form1">
+        <div class="collections">
+          <label for="idNum">ID Number:</label>
+          <input type="text" id="idNum" placeholder="ID Number"> <br><br>
+        </div>       
+        <div class="collections">
+          <label for="firstName">First Name:</label>      
+          <input type="text" id="apiFN" placeholder="First Name"> <br><br>
+        </div> 
+        <div class="collections">
+          <label for="secondName">Last Name:</label>      
+          <input type="text" id="apiLN" placeholder="Last Name"> <br><br>
+        </div> 
+        
+        <div class="collections">
+          <label for="email">Email:</label>      
+          <input type="text" id="email" placeholder="Email"><br><br>
+        </div>
+        
+        <!-- crud operations -->
+        <input type="button" value="Post" onclick="apiPost()" class="btn1">
+        <input type="button" value="Put" onclick="apiPut()"class="btn1">
+        <input type="button" value="Delete" onclick="apiDelete()" class="btn1">
+      </form>
+    </fieldset>
+    </main>
+  </body>
+</html>
